@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttons_layout"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
         <LinearLayout
@@ -20,26 +20,25 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_line1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="23dp"
-                android:gravity="right"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="9dp"
                 android:layout_marginVertical="12dp"
-                android:text=""
-                android:id="@+id/tv_line1"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="45dp"
                 android:gravity="right"
+                android:text=""
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/tv_line2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="9dp"
                 android:layout_marginBottom="25dp"
-                android:textStyle="bold"
+                android:gravity="right"
                 android:text="0"
-                android:id="@+id/tv_line2"
-                />
+                android:textSize="45dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -49,29 +48,17 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="129dp"
-                android:layout_height="60dp"
-                app:cornerRadius="15dp"
-                android:textSize="18dp"
-                android:gravity="center"
-                android:layout_marginRight="83dp"
-                android:text="CALCULATOR"
-                android:id="@+id/txt_logo"
-                android:textColor="#2196F3"
-                />
             <Button
-                android:layout_width="80dp"
-                android:layout_height="60dp"
-                app:cornerRadius="15dp"
-                android:textSize="16dp"
-                android:layout_marginLeft="82dp"
-                android:text="Back"
                 android:id="@+id/btn_backspace"
-                android:textColor="@color/white"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="295dp"
                 android:backgroundTint="#8B97DC"
                 android:onClick="del"
-                />
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                app:cornerRadius="15dp" />
 
         </LinearLayout>
 
@@ -83,7 +70,7 @@
 
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -95,7 +82,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -107,7 +94,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -119,7 +106,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -139,7 +126,7 @@
 
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -150,7 +137,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -161,7 +148,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -172,7 +159,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -192,7 +179,7 @@
 
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -203,7 +190,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -214,7 +201,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -225,7 +212,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -245,7 +232,7 @@
 
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -256,7 +243,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -267,7 +254,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -278,7 +265,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -298,7 +285,7 @@
 
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -310,7 +297,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -321,7 +308,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
@@ -332,7 +319,7 @@
                 />
             <Button
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 app:cornerRadius="15dp"
                 android:textSize="25dp"
                 android:layout_marginHorizontal="9dp"
